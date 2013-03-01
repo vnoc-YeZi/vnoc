@@ -222,7 +222,7 @@ VOID CFrameWork::_GetModulesListenList(FrameModule module)
 VOID CFrameWork::_InitUILib()
 {
 	BkFontPool::SetDefaultFont(_T("Courier New"), -12);
-	BkSkin::LoadSkins(IDR_XML_SKIN_DEF);
+	BkSkin::LoadSkins(IDR_BK_SKIN_DEF);
 	BkStyle::LoadStyles(IDR_BK_STYLE_DEF);
 	CString strPath;
 	GetModuleFileName(nullptr,strPath.GetBuffer(MAX_PATH),MAX_PATH);

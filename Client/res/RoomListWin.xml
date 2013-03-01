@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layer title="RoomList" width="800" height="570" appwin="1">
-	<header class="dlg_header" width="full" height="60">
+<layer title="RoomList" width="800" height="590" appwin="1">
+	<header class="dlg_header" width="full" height="20">
 		
 		<dlg pos="0,0,-0,-0" crbg="78F0E7">
-		<img pos="8,8" skin="little_logo"/>
+		<!--img pos="8,8" skin="little_logo"/-->
 		</dlg>
-		<text class="dlgtitle" pos="88,10" crtext="3F89D9" font="0404">教室列表</text>
+		<!--text class="dlgtitle" pos="88,10" crtext="3F89D9" font="0404">教室列表</text-->
 		<imgbtn id="10001" class="linkimage" skin="closeonlybtn" pos="-43,0"/>
 	</header>
 	
@@ -15,29 +15,48 @@
 	</footer>
 	
 	<body class="dlg_body" width="full" height="full">
-			<dlg pos="0,0,-0,-0" crbg="AFF9E9">
-						
-					<dlg  pos="0,129,271,480" class="panel" width="full" height="full" crbg="78f078">
-						<tabctrl id="10641" cursel="0" tabwidth="100" tabheight="100"  iconskin="roomlist_pane" frameskin="panelgray" tabspacing="1" tabpos="1" framepos="1" pos="0,0,-0,-1" icon-x="0" icon-y="20" text-x="0" text-y="25">
-							<tab id="12000" title="常用教室" width="full" height="full" class1="tabpage" >	
-								<dlg pos="0,0,-0,-0" crbg="DFF9E9">
-									<edit id="10111" pos="10,5,195,35" show="1"/>			
-									<button id="10004" class="normalbtn" pos="200,2,266,35" font="0200" crtext="425e63">查找教室</button>
-									<realwnd id="1001" pos="1,45,270,350" ctrlid="1001" crbg1="FBFCFD" />
-								</dlg>
-							</tab>	
-							
-							<tab id="12000" title="教室信息" width="full" height="full" class1="tabpage" >	
-								<dlg pos="1,1,-1,-1" crbg="DFF9E9">
-									<dlg pos="1,2,70,60" class=panel>
-										<realwnd id=2002 ctrlid=2002 pos="2,2,-2,-2"/>
+			<dlg pos="0,0,-0,-0" crbg="78F0E7">
+				<tabctrl id="20001" tabwidth="80" tabheight="62"  tabskin="tabmain" iconskin="logomodule" tabspacing="1" tabpos="350" framepos="1" pos="0,0,-0,700" icon-x="10" icon-y="-8" text-x="10" text-y="26" >
+				<!--第一个tab-->
+				<tab id="12000" title="我的好友" width="full" height="full" class="tabpageblue" >
+						<dlg pos="0,0,-0,-0" crbg="AFF9E9">
+						<dlg pos="0,129,271,480" class="panel" width="full" height="full" crbg="78f078">
+						<dlg pos="0,0,-0,-0" crbg="BFF9E9">
+							<tabctrl id="2001" cursel="0" tabwidth="65" tabskin="tab" tabspacing="4" tabpos="10" pos="0,5,-0,-0" frameskin="panelgray" framepos="-1">
+							<tab title="常用教室" width="full" height="full" class="tabpageblue" >	
+									<dlg pos="0,0,-0,-0" crbg="DFF9E9">
+										<edit id="10111" pos="10,5,195,29" show="1"/>
+										<imgbtn id="12100" class="linkimage" skin="search" pos="200,6"/>										
+										<!--button id="10004" class="normalbtn" pos="200,2,266,35" font="0200" crtext="425e63">查找教室</button-->
+										<realwnd id="1001" pos="1,35,270,320" ctrlid="1001" crbg1="FBFCFD" />
 									</dlg>
-								</dlg>
 							</tab>	
-						</tabctrl>
-					</dlg>
+							<tab title="收藏教室" width="full" height="full" class="tabpageblue" >	
+									<dlg pos="1,1,-1,-1" crbg="DFF9E9">
+										<dlg pos="1,2,70,60" class=panel></dlg>
+									</dlg>
+							</tab>
+							<tab title="我的教室" width="full" height="full" class="tabpageblue" >	
+									<dlg pos="1,1,-1,-1" crbg="DFF9E9">
+										<dlg pos="1,2,70,60" class=panel></dlg>
+									</dlg>
+							</tab>
+							</tabctrl>
+						</dlg>	
+						</dlg>	
+						</dlg>
+				</tab>
 					
-				
+				<!--第二个tab-->
+				<tab id="12000" title="主页" width="full" height="full" class="tabpageblue" >	
+				</tab>
+					
+				<!--第三个tab-->
+				<tab id="12000" title="推荐教室" width="full" height="full" class="tabpagemain" >	
+				</tab>
+				</tabctrl>
 			</dlg>
+	</body>
+</layer>
 	</body>
 </layer>

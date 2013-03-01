@@ -140,6 +140,8 @@
 <class name="onekeyseldirbgsanjiao" skin="onekeyseldirbgsanjiao" />
 <class name="onekeyinstingsanjiao" skin="onekeyinstingsanjiao" />
 <class name="onekeybegininst" skin="onekeybegininst" cursor="hand"/>
+<class name="tabpagemain" margin="0" crbg="E8F5FB" crtext="939698"/>
+<class name="tabpageblue" margin="0" crbg="E8F5FB" crtext="000000"/>
 <class name=ignore_title font=0094 crtext=3064A5/>
 <class name=ignore_line crbg=a3bad2/>
 </style>

@@ -20,7 +20,7 @@ void CRoomListWnd::OnBkBtnClose()
 
 void CRoomListWnd::OnShowWnd( XMessage* pmsg )
 {
-	DoModal();	
+	DoModal();
 }
 
 
