@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "FrameWork.h"
 #include "Factory.h"
-
+//
 CFrameWork::CFrameWork()
 {
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layer title="RoomList" width="800" height="590" appwin="1">
+<layer title="RoomList" width="800" height="589" appwin="1">
 	<header class="dlg_header" width="full" height="20">
 		
 		<dlg pos="0,0,-0,-0" crbg="78F0E7">
