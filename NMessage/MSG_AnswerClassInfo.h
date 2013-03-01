@@ -4,7 +4,7 @@
 #include "CMessage.h"
 #include "MsgDataValue/StringData.h"
 #include "MsgDataValue/NumData.hpp"
-
+//测试中文
 ///> Generate by MessageProduse. DO NOT EDIT!
 
 namespace VNOC
@@ -20,11 +20,6 @@ public:
         InitializeMessage("MSG_AnswerClassInfo");
     }
 
-    MSG_AnswerClassInfo(IReadMessage& Msg)
-    {
-        CMessage::Copy(Msg, "MSG_AnswerClassInfo");
-    }
-
     virtual ~MSG_AnswerClassInfo(){}
 
     MsgStatus SetRoomID(const Define::uint32& Value)
@@ -32,9 +27,9 @@ public:
         return Write("RoomID", new NumData<Define::uint32>(Value));
     }
 
-    MsgStatus SetRoomManageId(const Define::uint32& Value)
+    MsgStatus SetRoomMasterId(const Define::uint32& Value)
     {
-        return Write("RoomManageId", new NumData<Define::uint32>(Value));
+        return Write("RoomMasterId", new NumData<Define::uint32>(Value));
     }
 
     MsgStatus SetRoomName(const std::string& Value)
@@ -42,9 +37,9 @@ public:
         return Write("RoomName", new StringData(Value));
     }
 
-    MsgStatus SetRoomPassword(const std::string& Value)
+    MsgStatus SetRoomPeopleCurNum(const Define::uint32& Value)
     {
-        return Write("RoomPassword", new StringData(Value));
+        return Write("RoomPeopleCurNum", new NumData<Define::uint32>(Value));
     }
 
     MsgStatus SetRoomPeopleListId(const std::vector<Define::uint32>& Value)
@@ -81,10 +76,10 @@ public:
         return pReadValue->ToUInt32(Value);
     }
 
-    MsgStatus GetRoomManageId(Define::uint32& Value)
+    MsgStatus GetRoomMasterId(Define::uint32& Value)
     {
         MsgDataValue* pReadValue = NULL;
-        Read("RoomManageId", pReadValue);
+        Read("RoomMasterId", pReadValue);
         return pReadValue->ToUInt32(Value);
     }
 
@@ -95,11 +90,11 @@ public:
         return pReadValue->ToStr(Value);
     }
 
-    MsgStatus GetRoomPassword(std::string& Value)
+    MsgStatus GetRoomPeopleCurNum(Define::uint32& Value)
     {
         MsgDataValue* pReadValue = NULL;
-        Read("RoomPassword", pReadValue);
-        return pReadValue->ToStr(Value);
+        Read("RoomPeopleCurNum", pReadValue);
+        return pReadValue->ToUInt32(Value);
     }
 
     MsgStatus GetRoomPeopleListId(std::vector<Define::uint32>& Value)

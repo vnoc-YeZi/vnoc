@@ -1,5 +1,5 @@
-﻿#ifndef VNOC_C_MESSAGE_MSG_RequestLogin
-#define VNOC_C_MESSAGE_MSG_RequestLogin
+﻿#ifndef VNOC_C_MESSAGE_MSG_RequestEnterClassroom
+#define VNOC_C_MESSAGE_MSG_RequestEnterClassroom
 #include "MessageDef.h"
 #include "CMessage.h"
 #include "MsgDataValue/StringData.h"
@@ -12,24 +12,24 @@ namespace VNOC
 namespace Message
 {
 
-class MSG_RequestLogin : public CMessage
+class MSG_RequestEnterClassroom : public CMessage
 {
 public:
-    MSG_RequestLogin()
+    MSG_RequestEnterClassroom()
     {
-        InitializeMessage("MSG_RequestLogin");
+        InitializeMessage("MSG_RequestEnterClassroom");
     }
 
-    virtual ~MSG_RequestLogin(){}
+    virtual ~MSG_RequestEnterClassroom(){}
 
-    MsgStatus SetAccountNumber(const std::string& Value)
+    MsgStatus SetRoomID(const Define::uint32& Value)
     {
-        return Write("AccountNumber", new StringData(Value));
+        return Write("RoomID", new NumData<Define::uint32>(Value));
     }
 
-    MsgStatus SetPassword(const std::string& Value)
+    MsgStatus SetRoomPassword(const std::string& Value)
     {
-        return Write("Password", new StringData(Value));
+        return Write("RoomPassword", new StringData(Value));
     }
 
     MsgStatus SetVerificationCode(const std::string& Value)
@@ -37,17 +37,17 @@ public:
         return Write("VerificationCode", new StringData(Value));
     }
 
-    MsgStatus GetAccountNumber(std::string& Value)
+    MsgStatus GetRoomID(Define::uint32& Value)
     {
         MsgDataValue* pReadValue = NULL;
-        Read("AccountNumber", pReadValue);
-        return pReadValue->ToStr(Value);
+        Read("RoomID", pReadValue);
+        return pReadValue->ToUInt32(Value);
     }
 
-    MsgStatus GetPassword(std::string& Value)
+    MsgStatus GetRoomPassword(std::string& Value)
     {
         MsgDataValue* pReadValue = NULL;
-        Read("Password", pReadValue);
+        Read("RoomPassword", pReadValue);
         return pReadValue->ToStr(Value);
     }
 

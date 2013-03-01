@@ -4,7 +4,7 @@
 #include "CMessage.h"
 #include "MsgDataValue/StringData.h"
 #include "MsgDataValue/NumData.hpp"
-
+//测试中文
 ///> Generate by MessageProduse. DO NOT EDIT!
 
 namespace VNOC
@@ -18,11 +18,6 @@ public:
     MSG_RequestVerificationCode()
     {
         InitializeMessage("MSG_RequestVerificationCode");
-    }
-
-    MSG_RequestVerificationCode(IReadMessage& Msg)
-    {
-        CMessage::Copy(Msg, "MSG_RequestVerificationCode");
     }
 
     virtual ~MSG_RequestVerificationCode(){}
