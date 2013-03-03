@@ -54,7 +54,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>include;../../ThirdLibs;$(IncludePath);</IncludePath>
+    <IncludePath>include;../../ThirdLibs;C:\Users\Administrator\Documents\GitHub\vnoc\cppunit-1.12.1\include\cppunit;$(IncludePath)</IncludePath>
     <LibraryPath>../../ThirdLibs;$(LibraryPath)</LibraryPath>
     <IntDir>../Temp/</IntDir>
   </PropertyGroup>

@@ -106,8 +106,8 @@ typedef enum _VMsg
     MSG_AnswerClassList_Id                 = 6106, //获取班级列表（应答）
     MSG_RequestClassInfo_Id                = 6107, //获取班级信息（请求）
     MSG_AnswerClassInfo_Id                 = 6108, //获取班级信息（应答）
-	MSG_RequestEnterClassroom			   = 6109, //进入班级	 (请求)
-	MSG_AnswerEnterClassroom			   = 6110, //进入班级	 (应答)
+	MSG_RequestEnterClass_Id			   = 6109, //进入班级	 (请求)
+	MSG_AnswerEnterClass_Id				   = 6110, //进入班级	 (应答)
 
     MSG_TYPE_END,
 }VMsg;

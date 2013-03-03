@@ -1,5 +1,5 @@
-﻿#ifndef VNOC_C_MESSAGE_MSG_AnswerEnterClassroom
-#define VNOC_C_MESSAGE_MSG_AnswerEnterClassroom
+﻿#ifndef VNOC_C_MESSAGE_MSG_AnswerEnterClass
+#define VNOC_C_MESSAGE_MSG_AnswerEnterClass
 #include "MessageDef.h"
 #include "CMessage.h"
 #include "MsgDataValue/StringData.h"
@@ -12,15 +12,15 @@ namespace VNOC
 namespace Message
 {
 
-class MSG_AnswerEnterClassroom : public CMessage
+class MSG_AnswerEnterClass : public CMessage
 {
 public:
-    MSG_AnswerEnterClassroom()
+    MSG_AnswerEnterClass()
     {
-        InitializeMessage("MSG_AnswerEnterClassroom");
+        InitializeMessage("MSG_AnswerEnterClass");
     }
 
-    virtual ~MSG_AnswerEnterClassroom(){}
+    virtual ~MSG_AnswerEnterClass(){}
 
     MsgStatus SetRetTag(const Define::uint32& Value)
     {

@@ -1,20 +1,20 @@
-#ifdef CPPTEST
-#include <cppunit/TestFixture.h>
-#include <cppunit/extensions/HelperMacros.h>
-#include "../../NMessage/CMessage.h"
-#include "../../NMessage/MsgDataValue/MsgDataValue.h"
-#include "../../NMessage/MsgDataValue/StringData.h"
-#include "../../NMessage/ParserMessageXML.h"
-#include "../../NMessage/XMLObject.h"
+//#ifdef CPPTEST
+#include <../../../cppunit-1.12.1/include/cppunit/TestFixture.h>
+#include <../../../cppunit-1.12.1/include/cppunit/extensions/HelperMacros.h>
+#include "../../../NMessage/CMessage.h"
+#include "../../../NMessage/MsgDataValue/MsgDataValue.h"
+#include "../../../NMessage/MsgDataValue/StringData.h"
+#include "../../../NMessage/ParserMessageXML.h"
+#include "../../../NMessage/XMLObject.h"
 #include <Windows.h>
 #include <string.h>
 #include <shlwapi.h>
 #include <atlstr.h>
-#include "../../NMessage/MsgDataValue/NumData.hpp"
-#include "../../NMessage/Message2Pack.h"
-#include "../../NMessage/Message2Parser.h"
-#include "../../NMessage/NMSG_ALI.h"
-#include "../../NMessage/NMSG_ACL.h"
+#include "../../../NMessage/MsgDataValue/NumData.hpp"
+#include "../../../NMessage/Message2Pack.h"
+#include "../../../NMessage/Message2Parser.h"
+#include "../../../NMessage/NMSG_ALI.h"
+#include "../../../NMessage/NMSG_ACL.h"
 
 using namespace VNOC::Message;
 using namespace VNOC::Message::Define;
@@ -220,4 +220,4 @@ public:
 CPPUNIT_TEST_SUITE_REGISTRATION ( testNMessage );
 CPPUNIT_TEST_SUITE_NAMED_REGISTRATION(testNMessage, "testNMessage");
 
-#endif
+//#endif

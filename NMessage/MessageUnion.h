@@ -13,7 +13,7 @@
 #include "MSG_AnswerClassList.h"
 #include "MSG_RequestClassInfo.h"
 #include "MSG_AnswerClassInfo.h"
-#include "MSG_RequestEnterClassroom.h"
-#include "MSG_AnswerEnterClassroom.h"
+#include "MSG_RequestEnterClass.h"
+#include "MSG_AnswerEnterClass.h"
 
 #endif
